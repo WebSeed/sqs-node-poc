@@ -1,0 +1,22 @@
+{
+  "name": "sqs-node-poc",
+  "version": "1.0.0",
+  "description": "SQS Node.js proof-of-concept",
+  "main": "index.js",
+  "scripts": {
+    "api": "nodemon api",
+    "worker": "nodemon worker"
+  },
+  "repository": {
+    "url": "git@github.com:WebSeed/sqs-node-poc.git",
+    "type": "git"
+  },
+  "author": "Will Bamford <w.bamford@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.6.10",
+    "express": "^4.14.0",
+    "sqs-consumer": "^3.3.0",
+    "unitimer": "^3.1.0"
+  }
+}
