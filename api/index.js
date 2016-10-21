@@ -20,20 +20,6 @@ function getCallbackUrl(req) {
 
 app.get('/', (req, res) => {
   const message = {
-    MessageAttributes: {
-      Foo: {
-        DataType: 'String',
-        StringValue: 'Hello World'
-      },
-      Bar: {
-        DataType: 'Binary',
-        BinaryValue: '...'
-      },
-      Baz: {
-        DataType: 'Number',
-        StringValue: '42'
-      }
-    },
     MessageBody: JSON.stringify({
       id,
       message: `Hello World ${id}`,
