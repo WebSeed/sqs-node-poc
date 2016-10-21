@@ -9,9 +9,7 @@ const app = express()
 app.use(bodyParser.json())
 
 const sqs = new AWS.SQS()
-
-var [ timerQueue ] = createTimer([ 'Queue' ])
-
+const [ timerQueue ] = createTimer([ 'Queue' ])
 let id = 0
 
 function getCallbackUrl(req) {
